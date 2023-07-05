@@ -1,0 +1,31 @@
+#text {
+  text-decoration: underline;
+}
+
+/* 클래스 선택자 */
+.my {
+  background-color: skyblue;
+  color: slateblue;
+}
+
+/* 형제 인접 선택자 */
+.my + p {
+  color: aqua;
+}
+
+strong {
+  background-color: yellow;
+}
+
+.sect2 > strong {
+  background-color: yellow;
+}
+
+.sect2 * {
+  border: 2px solid red;
+}
+
+.my + p,
+.sect p {
+  background-color: beige;
+}

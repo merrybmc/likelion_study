@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+
+    <style>
+        * {
+            border: 2px solid sandybrown;
+            padding: 10px;
+        }
+
+        div {
+            background-color: aqua;
+        }
+
+        p {
+            background-color: white;
+        }
+
+        #hello {
+            font-weight: bold;
+        }
+
+        .class1 {
+            color: royalblue;
+        }
+
+        [type='text'] {
+            background-color: salmon;
+        }
+
+        h1,
+        p,
+        button,
+        input {
+            border: 2px dotted red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        안녕하세요
+        <p id="hello">멋사</p>
+        <p id="hello2" class="class1">프론트엔드</p>
+        <p class=class1>7기</p>
+        <button class="btn_del">버튼</button>
+        <input type="text" placeholder="이름">
+        <input type="password" placeholder="비밀번호">
+
+    </div>
+</body>
+
+</html>

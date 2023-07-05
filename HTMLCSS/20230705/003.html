@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        /* 하위 선택자 */
+        /* section 하위에 있는 모든 p 태그 */
+        section p {
+            border: 3px solid skyblue;
+        }
+
+        /* 자식 선택자 */
+        /* section 한 단계 하위에 있는 모든 p 태그 */
+        section>p {
+            background-color: gold;
+        }
+
+        /* 인접 형제 선택자 */
+        /* section 태그가 닫힌 후 가장 인접하게 있는 p 태그 */
+        section+p {
+            background-color: pink;
+        }
+
+        /* 일반 형제 선택자 */
+        /* section 태그가 닫힌 후의 모든 p 태그 */
+        section~p {
+            border: 3px solid seagreen;
+        }
+
+        section {
+            color: red;
+            border: 2px solid salmon;
+            width: 100px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: inherit;
+            border: inherit;
+            /* 상속 */
+            color: initial;
+            /* 초기화 */
+        }
+    </style>
+</head>
+
+<body>
+    <p>하나</p>
+    <p>둘</p>
+    <p>셋</p>
+
+    <section>
+        <div>
+            <p>넷</p>
+        </div>
+        <p>다섯</p>
+        <p>여섯</p>
+    </section>
+
+    <p>일곱</p>
+    <p>여덟</p>
+    <p>아홉</p>
+</body>
+
+</html>

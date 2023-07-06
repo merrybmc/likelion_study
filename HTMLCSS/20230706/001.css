@@ -1,0 +1,22 @@
+body {
+  color: red;
+}
+
+h1 {
+  color: inherit;
+
+  /* color: rgba(77, 63, 226,  0.1); */
+}
+
+.pc {
+  font-family: 'aaaa';
+}
+
+strong {
+  border-bottom: 5px solid royalblue;
+}
+
+button {
+  color: inherit;
+  border: inherit;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 만들기</title>
+
+    <style>
+        .box1 {
+            width: 100px;
+            height: 32px;
+            border: 5px solid #000000;
+            text-align: center;
+            background-color: #343F50;
+            color: white;
+            overflow: hidden;
+        }
+
+        .box1 p {
+            border: 5px solid #4a5568;
+            border-width: 5px 0 0 5px;
+            height: 100%;
+            padding: 2px 0;
+        }
+
+        .box2 {
+            /* best practice */
+            width: 100px;
+            height: 32px;
+            border: 5px solid #000000;
+            text-align: center;
+            background-color: #343F50;
+            color: white;
+            box-shadow: inset 5px 5px 0 0 #4a5568;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 44px;
+            text-align: center;
+            background-color: #343F50;
+            color: white;
+            padding-top: 7px;
+            border: 5px solid #4a5568;
+            border-width: 5px 0 0 5px;
+            outline: 5px solid #000000;
+        }
+
+        .btn1 {
+            padding: 10px 20px 8px 24px;
+            background-color: #343F50;
+            color: white;
+            border: 5px solid #000;
+            box-shadow: inset 5px 5px 0 0 #4a5568;
+        }
+
+        .box4 {
+            display: inline-block;
+            background: linear-gradient(90deg, #834df6 0%, #336df2 100%);
+            background-color: skyblue;
+            border-radius: 50px;
+            border: 5px dashed #e6d6ff;
+            background-clip: padding-box;
+            /* outline: 5px dashed #e6d6ff; */
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .box5 {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 0 50px 50px 50px;
+            border: 5px solid #dddddd;
+            box-shadow: 5px 5px 0px 0 #eeeeee;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <p>Hello ✋</p>
+    </div>
+
+    <br />
+
+    <p class="box2">Hello ✋</p>
+
+    <br />
+
+    <p class="box3">Hello ✋</p>
+
+    <br />
+
+    <button class="btn1">
+        Hello ✋
+    </button>
+
+    <br />
+
+    <p class="box4">Hello ✋</p>
+
+    <br />
+
+    <p class="box5">Hello ✋</p>
+</body>
+
+</html>

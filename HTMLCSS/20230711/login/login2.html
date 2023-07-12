@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+
+    <style>
+        @font-face {
+            font-family: 'SpoqaHanSansNeo';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body,
+        p {
+            margin: 0
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: skyblue;
+            font-family: 'SpoqaHanSansNeo', sans-serif;
+        }
+
+        .login-wrap {
+            width: 350px;
+            height: 140px;
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid #dbdbdb;
+            box-sizing: border-box;
+            padding: 20px 16px;
+            font-size: 12px;
+        }
+
+        .btn-login {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 40px;
+            background-color: #711bff;
+            color: white;
+            margin: 16px 0;
+        }
+
+        .btn-login img {
+            width: 64px;
+            margin-right: 3px;
+        }
+
+        .login-link {
+            color: #767676;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .login-link img {
+            width: 16px;
+            /* height: 16px; */
+            margin-right: 4px;
+            vertical-align: middle;
+        }
+
+        .login-link a {
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            margin: 0 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="login-wrap">
+        <!-- <h1 class="ally-hidden">로그인</h1> -->
+        <p class="des">더 편리해진 위니브에 오신 것을 환영합니다.</p>
+        <a href="#" class="btn-login">
+            <img src="./images/weniv-logo.png" alt="weniv">
+            로그인
+        </a>
+        <div class="login-link">
+            <div>
+                <a href="#">
+                    <img src="./images/icon-lock.png" alt="">
+                    아이디 |</a>
+                <a href="#"> 비밀번호찾기</a>
+            </div>
+            <a href="#">
+                <img src="./images/icon-user.png" alt="">
+                회원가입</a>
+        </div>
+    </section>
+</body>
+
+</html>

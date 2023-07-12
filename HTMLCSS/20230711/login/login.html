@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        @font-face {
+            font-family: 'SpoqaHanSansNeo';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .container {
+            width: 350px;
+            height: 140px;
+            border-radius: 5px;
+            border: 1px solid #DBDBDB;
+            background: #FFF;
+            padding-left: 16px;
+            padding-top: 19px;
+        }
+
+        header {
+            font-family: 'SpoqaHanSansNeo';
+            font-family: Spoqa Han Sans Neo;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        button {
+            width: 318px;
+            height: 40px;
+            border-radius: 4px;
+            background: #711BFF;
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'SpoqaHanSansNeo';
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        [alt='loginBtn'] {
+            width: 64px;
+            height: 18px;
+        }
+
+        [alt='bottomImg'] {
+            width: 16px;
+            height: 16px;
+            margin-right: 1px;
+        }
+
+        .bottom {
+            display: flex;
+            width: 318px;
+            color: #767676;
+            align-items: center;
+            justify-content: center;
+            font-family: 'SpoqaHanSansNeo';
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 16px;
+        }
+
+        .bottomContent {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .bottomRight {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class='header'>더 편리해진 위니브에 오신 것을 환영합니다.</header>
+        <button>
+            <img src="./images/weniv-logo.png" alt="loginBtn" />로그인</button>
+        <div class="bottom">
+            <div class="bottomContent">
+                <img src="./images/icon-lock.png" alt="bottomImg">
+                <p>아이디 | 비밀번호찾기</p>
+            </div>
+            <div class="bottomContent bottomRight">
+                <img src="./images/icon-user.png" alt="bottomImg">
+                <span>회원가입</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

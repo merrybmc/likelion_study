@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새 소식</title>
+
+    <style>
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font: inherit;
+        }
+
+        button:enabled {
+            cursor: pointer;
+        }
+
+        button:disabled {
+            cursor: default;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        body {
+            background-color: skyblue;
+            font-family: 'Pretendard';
+        }
+
+        .card {
+            width: 288px;
+            border-radius: 8px;
+            background: #FFF;
+            box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.10);
+        }
+
+        .card header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 16px 12px;
+        }
+
+        [alt='profile'] {
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            object-fit: cover;
+        }
+
+        .fwb {
+            color: #29363d;
+        }
+
+        .small-font {
+            font-size: 12px;
+            color: #5a6a72;
+        }
+
+        .ell1 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .ell2 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            height: calc(1em * 1.6 *2);
+        }
+
+        .card-header-text {
+            overflow: hidden;
+        }
+
+        .thumbnail {
+            width: 100%;
+            aspect-ratio: 288/196;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 10px 16px 16px;
+        }
+
+        .card-content .ell2 {
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        .read {
+            font-size: 14px;
+            text-decoration: underline;
+            position: relative;
+        }
+
+        .read::after {
+            content: '';
+            display: block;
+
+            width: 4px;
+            height: 4px;
+
+            position: absolute;
+            right: 0;
+            top: 30%;
+            border-style: solid;
+            border-color: #29363d;
+            border-width: 2px 2px 0 0;
+
+            transform: translateY(-50%);
+        }
+
+        .read:hover::after {
+            border-color: royalblue;
+            transform: translate(0, -50%) rotate(-405deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>새소식</h2>
+    <article class="card">
+        <a href="#">
+            <header>
+                <img src="./images/profile.png" alt="profile">
+                <div class="card-header-text">
+                    <h3 class="ell1 fwb">그것을 피가 청춘을 것이다</h3>
+                    <p class="small-font">secondary</p>
+                </div>
+            </header>
+            <img class="thumbnail" src="./images/article.png" alt="article">
+            <div class="card-content">
+                <p class="small-font ell2">청춘의 하였으며, 이것은 몸이 때문이다. 사는가 고동을 용기가 충분히 청춘 것이다. 얼마나 반짝이는 소담스러운</p>
+                <p class="read fwb">Read</p>
+            </div>
+        </a>
+        <div>
+            <button type="button">
+                <!-- 좋아요 / 좋아요 취소 -->
+                <img src="./images/icon-heart.svg" alt="heart">
+                <img src="./images/icon-share.svg" alt="share">
+                <img src="./images/icon-more.svg" alt="more">
+            </button>
+        </div>
+    </article>
+</body>
+
+</html>

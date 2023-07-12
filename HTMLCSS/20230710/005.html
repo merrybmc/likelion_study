@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드 UI</title>
+
+    <style>
+        @font-face {
+            font-family: 'Pretendard';
+            src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .container {
+            width: 288px;
+            height: 348px;
+            box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.10);
+        }
+
+        .container p {
+            padding-left: 16px;
+        }
+
+        .header {
+            font-family: 'Pretendard';
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .article {
+            font-family: Pretendard;
+            /* white-space: nowrap; */
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            text-overflow: ellipsis;
+            width: 256px;
+            height: 40px;
+            overflow: hidden;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        .read {
+            font-family: Pretendard;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./images/cardimg.png" alt="카드이미지">
+        <p class="header">그것을 피가 청춘을 것이다</p>
+        <p class="article">청춘의 하였으며, 이것은 몸이 때문이다. 사는가 고동을 용기가 충분히 청춘 것이다. 얼마나 반짝이는 소담스러운 스러운 스러운</p>
+        <p class="read">Read</p>
+    </div>
+</body>
+
+</html>

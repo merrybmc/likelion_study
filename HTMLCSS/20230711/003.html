@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .box1 {
+            float: left;
+            background-color: aqua;
+        }
+
+        .box2 {
+            float: left;
+            background-color: beige;
+        }
+
+        .box3 {
+            /* clear: left; */
+            background-color: blueviolet;
+            position: relative;
+        }
+
+        .layout {
+            /* overflow: hidden; */
+        }
+
+        .layout img {
+            border-radius: 50px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .layout h2,
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        .layout h2 {
+            padding-top: 24px;
+        }
+
+        .clear-fix::after {
+            content: '';
+            display: block;
+            clear: both;
+            /* width: 100px;
+            height: 100px;
+            background-color: red; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        Container
+        <div class="box box1">A</div>
+        <div class="box box2">B</div>
+        <div class="box box3">C</div>
+    </div> -->
+
+    <br />
+
+    <div class="layout clear-fix">
+        <img src="http://placehold.it/100x100" alt="">
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>lorem</p>
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tenetur expedita sit porro ducimus sunt asperiores ipsum quaerat aliquam voluptates magnam perspiciatis dolores minus maxime
+    exercitationem beatae dolor, perferendis atque.
+</body>
+
+</html>

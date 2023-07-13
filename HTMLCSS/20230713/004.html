@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        .px20 {
+            font-size: 20px;
+        }
+
+        .px40 {
+            font-size: 40px;
+        }
+
+        .clamp {
+            /* 최소값, viewport,최대값 */
+            background-color: gold;
+            font-size: clamp(20px, 2.5vw, 40px);
+
+            /* 1vw = viewport 너비(width) * 0.01 */
+            /* 2.5vw = 0.025 */
+            /* width 500px * 0.025 = 12.5px */
+            /* width 1000px * 0.025 = 25px */
+        }
+
+        .div100 {
+            width: 100px;
+            background-color: rosybrown;
+        }
+
+        .divClamp {
+            width: clamp(100px, 20vw, 400px);
+            background-color: rosybrown;
+        }
+
+        .div400 {
+            width: 400px;
+            background-color: rosybrown;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="px20">Hello world</p>
+    <p class="clamp">Hello world</p>
+    <p class="px40">Hello world</p>
+    <div class="div100">box</div>
+    <div class="divClamp">box</div>
+    <div class="div400">box</div>
+</body>
+
+</html>

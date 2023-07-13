@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        button:hover {
+            background-color: blue;
+        }
+
+        button:active {
+            background-color: red;
+        }
+
+        input:focus {
+            background-color: aqua;
+        }
+
+        a:link {
+            font-size: 32px;
+            font-weight: 700;
+            color: black;
+        }
+
+        a:visited {
+            font-size: 32px;
+            font-weight: 700;
+            color: blue;
+        }
+
+        .btn1:focus {
+            border: 5px solid green;
+        }
+
+        .btn2:focus {
+            border: 5px solid green;
+        }
+
+        div:focus-within {
+            background-color: skyblue;
+        }
+
+        button:enabled {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button">버튼</button>
+    <a href="https://www.naver.com">naver</a>
+    <input type="text">
+    <div>
+        <button disabled>버튼</button>
+        <button class="btn1" enabled>버튼1</button>
+        <button class="btn2" enabled>버튼2</button>
+    </div>
+</body>
+
+</html>

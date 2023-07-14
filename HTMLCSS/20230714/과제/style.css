@@ -1,0 +1,59 @@
+.container1 {
+  width: 120rem;
+  height: 67.5rem;
+  background-image: url(images/bg.png);
+}
+
+body {
+  background-image: url(images/bg.png);
+}
+
+h1,
+p {
+  padding: unset;
+  margin: unset;
+}
+
+.wrapper {
+  width: 18.75rem;
+  margin: 3.56rem auto 0;
+}
+
+.fox {
+  background-image: url(images/animal07.png);
+  height: 18.75rem;
+  margin-bottom: 0.62rem;
+}
+
+.green {
+  background-image: url(images/green.png);
+  margin-bottom: 0.62rem;
+}
+
+.container {
+  background-color: #9c6035;
+  height: 19.125rem;
+  /* height: 16rem; */
+  border-radius: 0rem 0rem 1.875rem 1.875rem;
+  border-bottom: 10px solid #46260e;
+  /* padding: 0 1.25rem; */
+}
+
+header {
+  color: #fff;
+  font-family: Arial;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 1.25rem;
+}
+
+.text {
+  padding: 0 1.25rem;
+  color: #e8bc9c;
+  font-family: Arial;
+  font-size: 1rem;
+  padding-top: 0.63rem;
+  /* font-weight: 400; */
+}

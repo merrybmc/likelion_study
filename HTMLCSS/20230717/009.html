@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        .container {
+            display: grid;
+            width: 600px;
+            height: 600px;
+            gap: 10px;
+            background-color: #eee;
+            grid-template-areas:
+                'a a c'
+                'b d c'
+                'b e e';
+        }
+
+        .a {
+            background-color: aqua;
+            grid-area: a;
+        }
+
+        .b {
+            background-color: burlywood;
+            grid-area: b;
+        }
+
+        .c {
+            background-color: chocolate;
+            grid-area: c;
+        }
+
+        .d {
+            background-color: blueviolet;
+            grid-area: d;
+        }
+
+        .e {
+            background-color: coral;
+            grid-area: e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+    </div>
+</body>
+
+</html>

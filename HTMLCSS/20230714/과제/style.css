@@ -1,11 +1,6 @@
-.container1 {
-  width: 120rem;
-  height: 67.5rem;
-  background-image: url(images/bg.png);
-}
-
 body {
   background-image: url(images/bg.png);
+  background-size: cover;
 }
 
 h1,
@@ -22,7 +17,6 @@ p {
 .fox {
   background-image: url(images/animal07.png);
   height: 18.75rem;
-  margin-bottom: 0.62rem;
 }
 
 .green {
@@ -33,10 +27,8 @@ p {
 .container {
   background-color: #9c6035;
   height: 19.125rem;
-  /* height: 16rem; */
   border-radius: 0rem 0rem 1.875rem 1.875rem;
   border-bottom: 10px solid #46260e;
-  /* padding: 0 1.25rem; */
 }
 
 header {

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            /* animation: change 1s; */
+            /* 2번 반복, 1초 지연, 무한 반복 */
+            animation: change 2s 1s infinite;
+        }
+
+        @keyframes change {
+            /* from {
+                background-color: royalblue;
+            }
+
+            to {
+                background-color: seagreen;
+            } */
+
+            0% {
+                scale: 0;
+                background-color: royalblue;
+            }
+
+            50% {
+                scale: 0.2;
+                background-color: blue;
+            }
+
+            100% {
+                scale: 1.2;
+                background-color: seagreen;
+            }
+        }
+
+        .licat {
+            width: 168px;
+            height: 200px;
+            border: 4px solid #000;
+            background-image: url(./image/keyframes-licat.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            /* 0 0 = left top */
+            background-size: auto 100%;
+
+            animation: move-licat 1s infinite steps(6);
+            /* animation-name: move-licat; */
+            /* animation-duration: 1s; */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: steps(6); */
+
+            animation-delay: 3s;
+        }
+
+        @keyframes move-licat {
+            /* to {
+                background-position: right 0;
+            } */
+
+            /* ----------------------------------------- */
+
+            /* 0% {
+                background-position: 0 0;
+            }
+
+            80% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: right 0;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="licat"></div>
+    <div class="box">box</div>
+</body>
+
+</html>

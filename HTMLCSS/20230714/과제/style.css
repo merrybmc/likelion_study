@@ -1,6 +1,11 @@
 body {
   background-image: url(images/bg.png);
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 h1,
@@ -11,7 +16,6 @@ p {
 
 .wrapper {
   width: 18.75rem;
-  margin: 3.56rem auto 0;
 }
 
 .fox {
@@ -47,5 +51,4 @@ header {
   font-family: Arial;
   font-size: 1rem;
   padding-top: 0.63rem;
-  /* font-weight: 400; */
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스토어</title>
+</head>
+
+<body>
+    <script>
+        const root = document.getElementById('root')
+
+        async function getProductData() {
+            const response = await fetch('http://test.api.weniv.co.kr/mall')
+            const product = await response.json()
+            return product
+        }
+
+        getProductData().then(product => {
+            // console.log(product)
+
+            const mainElement = document.createElement('main')
+
+            mainElement.classList.add('product')
+            // console.log(mainElement)
+
+            // 1
+            mainElement.innerHTML = `
+            <h1 class='ir'>상품목록 페이지</h1>
+            <ul class='product-list'></ul>
+            `
+
+            // 2
+            const productPageHeader = document.createElement('h1')
+            productPageHeader.classList.add('ir')
+            productPageHeader.setAttribute('class', 'ir')
+            productPageHeader.innerText = '상품목록 페이지'
+            main
+
+            root.append(mainElement)
+        })
+    </script>
+</body>
+
+</html>
